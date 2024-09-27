@@ -1,0 +1,74 @@
+<odoo>
+    <!-- Tree View for building Model -->
+    <record id="building_view_tree" model="ir.ui.view">
+        <field name="name">building tree</field>
+        <field name="model">building</field> <!-- Ensure your model name is correct -->
+        <field name="arch" type="xml">
+            <tree multi_edit="1" class="header_custom">
+                <field name="name"/>
+                <field name="no"/>
+                <field name="code"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="building_view_search" model="ir.ui.view">
+        <field name="name">building Search</field>
+        <field name="model">building</field> <!-- Ensure your model name is correct -->
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="no"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="building_view_form" model="ir.ui.view">
+        <field name="name">building form</field>
+        <field name="model">building</field> <!-- Ensure your model name is correct -->
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <widget name="web_ribbon" title="Archive" bg_color="text-bg-danger" invisible="active"/>
+                    <group>
+                        <group>
+                            <field name="name" required="1"/>
+                            <field name="no" required="1"/>
+                        </group>
+
+                        <group>
+                            <field name="code"/>
+                        </group>
+
+                        <group>
+                            <field name="description" required="1"/>
+                            <field name="active"/>
+                        </group>
+
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for building Model -->
+    <record id="building_action" model="ir.actions.act_window">
+        <field name="name">building</field>
+        <field name="res_model">building</field> <!-- Ensure your model name is correct -->
+    </record>
+
+    <!-- Menu Item for building Model -->
+    <menuitem
+            id="building_menu_item"
+            name="Building"
+            parent="properties_menu"
+            action="building_action"
+    />
+</odoo>

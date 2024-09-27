@@ -1,0 +1,51 @@
+<odoo>
+    <record id="tasks_record" model="ir.actions.report">
+        <field name="name">Tasks Report</field>
+        <field name="model">todo.task</field>
+        <field name="report_type">qweb-html</field>
+        <field name="binding_model_id" ref="model_todo_task"/>
+        <field name="binding_type">report</field>
+        <field name="report_name">todo_app.Tasks_report_template</field>
+    </record>
+
+    <template id="Tasks_report_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                 <t t-foreach="docs" t-as="task">
+                <div class="page">
+                    <h2>Task: <t t-esc="task.name"/></h2>
+                    <p><strong>Due Date:</strong> <t t-esc="task.due_date"/></p>
+                    <p><strong>Description:</strong> <t t-esc="task.description"/></p>
+                    <p><strong>Assigned To:</strong> <t t-esc="task.assign_to.name if task.assign_to else 'Unassigned'"/></p>
+                    <p><strong>Estimate Time:</strong> <t t-esc="task.estimate_time"/> hours</p>
+                    <p><strong>Total Duration:</strong> <t t-esc="task.total_duration"/> hours</p>
+                    <p><strong>Status:</strong> <t t-esc="task.state"/></p>
+                    <h3>Task Lines:</h3>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Duration (Hours)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="task.task_line_ids" t-as="line">
+                                <tr>
+                                    <td><t t-esc="line.date"/></td>
+                                    <td><t t-esc="line.description"/></td>
+                                    <td><t t-esc="line.duration"/></td>
+                                    <tr>
+                                <td colspan="2"><strong>Total Time:</strong></td>
+                                <td><t t-esc="task.total_duration"/></td>
+                            </tr>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+            </t>
+        </t>
+    </template>
+</odoo>

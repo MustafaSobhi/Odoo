@@ -1,0 +1,235 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * todo_app
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-27 12:51+0000\n"
+"PO-Revision-Date: 2024-09-27 12:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__estimate_time
+msgid "Estimate Time (Hours)"
+msgstr "الوقت المقدر (ساعات)"
+
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "<strong>Assigned To:</strong>"
+msgstr "<strong>مخصص إلى:</strong>"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "<strong>Description:</strong>"
+msgstr "<strong>الوصف:</strong>"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "<strong>Due Date:</strong>"
+msgstr "<strong>تاريخ الاستحقاق:</strong>"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "<strong>Estimate Time:</strong>"
+msgstr "<strong>الوقت المتوقع:</strong>"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "<strong>Status:</strong>"
+msgstr "<strong>الحالة:</strong>"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "<strong>Total Duration:</strong>"
+msgstr "<strong>إجمالي المدة:</strong>"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "<strong>Total Time:</strong>"
+msgstr "<strong>إجمالي الوقت:</strong>"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: todo_app
+#: model:ir.actions.act_window,name:todo_app.todo_action
+#: model:ir.ui.menu,name:todo_app.todo_menu_item
+msgid "All Tasks"
+msgstr "كل المهام"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__assign_to
+msgid "Assign To"
+msgstr "مخصص إلى"
+
+#. module: todo_app
+#: model:ir.actions.server,name:todo_app.todo_closed_server_action
+#: model:ir.model.fields.selection,name:todo_app.selection__todo_task__state__closed
+msgid "Closed"
+msgstr "مغلق"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_form
+msgid "Complete"
+msgstr "اكتمل"
+
+#. module: todo_app
+#: model:ir.model.fields.selection,name:todo_app.selection__todo_task__state__completed
+msgid "Completed"
+msgstr "مكتمل"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_search
+msgid "Completed Tasks"
+msgstr "المهام المكتملة"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__create_uid
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__create_uid
+msgid "Created by"
+msgstr "تم إنشاؤه بواسطة"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__create_date
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__create_date
+msgid "Created on"
+msgstr "تم إنشاؤه في"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__date
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_search
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__description
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__description
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "Description"
+msgstr "الوصف"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__display_name
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__due_date
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__duration
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "Duration (Hours)"
+msgstr "المدة (بالساعات)"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__id
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: todo_app
+#: model:ir.model.fields.selection,name:todo_app.selection__todo_task__state__in_progress
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_form
+msgid "In Progress"
+msgstr "قيد التنفيذ"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_search
+msgid "In Progress Tasks"
+msgstr "المهام قيد التنفيذ"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__is_late
+msgid "Is Late"
+msgstr "متأخر"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__write_uid
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_task_line__write_date
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: todo_app
+#: model:res.groups,name:todo_app.todo_manager_group
+msgid "Managers"
+msgstr "المديرون"
+
+#. module: todo_app
+#: model:ir.model.fields.selection,name:todo_app.selection__todo_task__state__new
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_form
+msgid "New"
+msgstr "جديد"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_search
+msgid "New Tasks"
+msgstr "المهام الجديدة"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__ref
+msgid "Ref"
+msgstr "المرجع"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_search
+msgid "Status"
+msgstr "الحالة"
+
+#. module: todo_app
+#: model:ir.model,name:todo_app.model_todo_task
+#: model:ir.model.fields,field_description:todo_app.field_task_line__task_id
+msgid "Task"
+msgstr "المهمة"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__task_line_ids
+msgid "Task Line"
+msgstr "خط المهمة"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.todo_view_form
+msgid "Task Lines"
+msgstr "خطوط المهام"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "Task Lines:"
+msgstr "خطوط المهام:"
+
+#. module: todo_app
+#: model:ir.model.fields,field_description:todo_app.field_todo_task__name
+msgid "Task Name"
+msgstr "اسم المهمة"
+
+#. module: todo_app
+#: model_terms:ir.ui.view,arch_db:todo_app.Tasks_report_template
+msgid "Task:"
+msgstr "المهمة:"
+
+#. module: todo_app
